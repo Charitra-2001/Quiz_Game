@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/3f4eb3cfec.js"></script>
+  <title>The Quiz show</title>
+  <style type="text/css">
+  body{
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+   background-size:cover;
+  }
+    p {
+      margin-bottom: 2px;
+    }
+
+    h6 {
+      font-size: 19px;
+    }
+
+    
+
+    
+
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar  navbar-expand-lg navbar-light" style="background-color: #FAF0E1;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Contact</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/Front_page/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sections
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item disabled" href="/Capitalquiz/Captail.html">Capital Quiz <i class="fa fa-lock"></i></a></li>
+              <li><a class="dropdown-item disabled" href="/Mapquiz/maps.html">Map Quiz <i class="fa fa-lock"></i></a></li>
+              <li><a class="dropdown-item disabled" href="/Mathquiz/math.html">Math Quiz <i class="fa fa-lock"></i></a></li>
+              <li><a class="dropdown-item disabled" href="/logical/logical.html">Logical Quiz <i class="fa fa-lock"></i></a></li>
+              <li><a class="dropdown-item disabled" href="/Currency/currency.html">Currency Quiz <i class="fa fa-lock"></i></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/contact_us/contact.html">Contact us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <div class="container" style="margin-top: 10%;" >
+
+    <div class="row justify-content-center">
+        
+        <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
+                <label for="floatingInputGrid">Email address</label>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                  <option selected>Choose your issue</option>
+                  <option value="1">Site unresponsive</option>
+                  <option value="2">Answers are wrong</option>
+                  <option value="3">Taking too much realoading time</option>
+                  <option value="4">Other</option>
+                </select>
+                <label for="floatingSelectGrid">Select your issue</label>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+    <div class="row my-3 justify-content-center">
+        <div class="form-floating col-8">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2" style="margin-left: 6px;">Describe your issue</label>
+          </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <p style="text-align: center; font-weight: bold;"><span id="submitted" style="color: green;"></span></p>
+        <button class="btn col-5"  type="submit" style="background-color:rgb(175, 102, 71) ;">Submit</button>
+    </div>
+  </div>
+ 
+
+
+  <script type="text/javascript">
+
+    $(".btn").click(function(){
+        $("#submitted").html("Your query will be resolved soon!");
+    });
+    
+    
+
+  </script>
+
+
+
+
+
+
+
+  <!-- Made by Charitra -->
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

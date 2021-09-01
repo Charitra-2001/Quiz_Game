@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/3f4eb3cfec.js"></script>
+  <title>The Quiz show</title>
+  <style type="text/css">
+  body{
+    background-image: url("earth.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:3500px;
+  }
+    p {
+      margin-bottom: 2px;
+    }
+
+    h6 {
+      font-size: 19px;
+    }
+
+   .row img {
+      width: 500px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Map Quiz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Front_page/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sections
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/Capitalquiz/Captail.html">Capital Quiz</a></li>
+              <li><a class="dropdown-item active" href="/Mapquiz/maps.html">Map Quiz</a></li>
+              <li><a class="dropdown-item disabled" href="/Mathquiz/math.html">Math Quiz <i class="fa fa-lock"></i></a></li>
+              <li><a class="dropdown-item disabled" href="/logical/logical.html">Logical Quiz <i class="fa fa-lock"></i></a></li>
+              <li><a class="dropdown-item disabled" href="/Currency/currency.html">Currency Quiz <i class="fa fa-lock"></i></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact_us/contact.html">Contact us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row">
+
+      <div class="col">
+
+        <div style="margin-top: 54px;">
+            <p><h1>Guess the country after viewing the map</h1></p>
+          <p style="color:green;">Correct submissions: <span id="correct">0</span></p>
+          <p style="color: red;">Incorrect submissions: <span id="incorrect">0</span></p>
+        </div>
+        <div class="row">
+            <img style="margin-top: 19px;" src="Russia_map.png">
+            <form>
+              <label>
+                A. <input name="same" type="radio"  value="England"> England
+              </label>
+              <p></p>
+              <label>
+                B. <input name="same" type="radio" class="Russia" value="Russia"> Russia
+              </label>
+              <p></p>
+              <label>
+                C. <input name="same" type="radio" value="United Kingdom"> United Kingdom
+              </label>
+              <p></p>
+              <label>
+                D. <input name="same" type="radio" value="India"> India
+              </label>
+             
+        </div>
+       
+
+
+
+        <div class="row">
+            <img style="margin-top: 50px;" src="Brazil_map.svg">
+
+            <label>
+              A. <input name="same" type="radio"  value="Libya"> Libya
+            </label>
+            <p></p>
+            <label>
+              B. <input name="same" type="radio" value="Iran"> Iran
+            </label>
+            <p></p>
+            <label>
+              C. <input name="same" type="radio" value="Denmark"> Denmark
+            </label>
+            <p></p>
+            <label>
+              D. <input name="same" type="radio" class="Brazil" value="Brazil"> Brazil
+            </label>
+            
+        </div>
+         
+
+
+        <div class="row">
+            <img style="margin-top: 50px;" src="kazakastan_map.svg">
+
+            <label>
+              A. <input name="same" type="radio"  value="Pakistan"> Pakistan
+            </label>
+            <p></p>
+            <label>
+              B. <input name="same" type="radio" value="Saudi Arabia"> Saudi Arabia
+            </label>
+            <p></p>
+            <label>
+              C. <input name="same" type="radio" class="Kazakastan" value="Kazakastan"> Kazakastan
+            </label>
+            <p></p>
+            <label>
+              D. <input name="same" type="radio"  value="Brazil"> Brazil
+            </label>
+            
+        </div>
+
+        <div class="row">
+            <img style="margin-top: 50px;" src="mongolia_map.svg">
+
+            <label>
+              A. <input name="same" type="radio"  value="Maurit"> Maurit
+            </label>
+            <p></p>
+            <label>
+              B. <input name="same" type="radio" class="Mongolia"value="Mongolia"> Mongolia
+            </label>
+            <p></p>
+            <label>
+              C. <input name="same" type="radio"  value="Niger"> Niger
+            </label>
+            <p></p>
+            <label>
+              D. <input name="same" type="radio"  value="Congo"> Congo
+            </label>
+            
+        </div>
+
+        
+
+        <div class="row">
+            <img style="margin-top: 50px;" src="Ireland_map.svg">
+
+            <label>
+              A. <input name="same" type="radio" class="Ireland" value="Ireland"> Ireland
+            </label>
+            <p></p>
+            <label>
+              B. <input name="same" type="radio" value="Iceland"> Iceland
+            </label>
+            <p></p>
+            <label>
+              C. <input name="same" type="radio"  value="Spain"> Spain
+            </label>
+            <p></p>
+            <label>
+              D. <input name="same" type="radio"  value="France"> France
+            </label>
+        </div>
+
+        </form>
+         <!-- Button trigger modal -->
+         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Next->
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title " id="exampleModalLabel">Result</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div>Successful attempts : <span id="succ">0</span></div>
+                <div>Unsuccessful attempts : <span id="unsucc">0</span></div>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-primary" href="/Mathquiz/math.html">Next</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+       
+
+
+
+    </div>
+
+    </div>
+
+
+
+  </div> 
+
+  <script type="text/javascript" src="/main.js"></script>
+  <script type="text/javascript">
+
+    var corr = 0;
+    var incorr = 0;
+
+
+
+    $('input[type=radio]').click(function () {
+
+
+
+
+      if ($(this).is(':checked')) {
+
+        var ans = $('input[name="same"]:checked').attr('class');
+        console.log(ans);
+        var ques = $(this).val();
+        if (ques == ans) {
+          corr++;
+          $("#succ").html(corr);
+          $(this).closest('label').css({ "color": "green" });
+          $("#correct").html(corr);
+            $(".solution").html(ans);
+
+
+        }
+        else {
+
+          incorr++;
+          $("#unsucc").html(incorr);
+          $(this).closest('label').css({ "color": "red" });
+          $("#incorrect").html(incorr);
+
+
+        }
+
+      }
+
+    });
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
